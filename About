@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Mission and Trips</title>
+    <style>
+        /* Existing styles from the previous layout */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background-color: #4CAF50; color: white; padding: 10px 0; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5rem; }
+        nav { text-align: center; margin-top: 10px; }
+        nav a { margin: 0 15px; color: #333; text-decoration: none; }
+        .hero { background-image: url('church-image.jpg'); height: 400px; background-size: cover; text-align: center; color: white; display: flex; align-items: center; justify-content: center; }
+        .hero h2 { font-size: 3rem; background-color: rgba(0, 0, 0, 0.5); padding: 10px; }
+        .content { max-width: 1200px; margin: auto; padding: 20px; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
+        /* Styles for mission stories */
+        .mission-story { margin: 30px 0; }
+        .mission-story h2 { color: #4CAF50; margin-bottom: 10px; }
+        .mission-story p { line-height: 1.6; margin-bottom: 20px; }
+        .mission-story a { color: #4CAF50; text-decoration: none; }
+        .mission-story a:hover { text-decoration: underline; }
+
+        .footer { text-align: center; padding: 20px 0; background-color: #333; color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Church Mission and Trips</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#mission">Mission Trips</a>
+            <a href="#events">Events</a>
+            <a href="#donate">Donate</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Join Our Mission to Spread Love and Hope</h2>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+
+        <!-- Mission Trips: Los Chilitos, Guatemala -->
+        <div class="mission-story">
+            <h2>Acts 29 Mission Stories: Church Planting in Los Chilitos</h2>
+            <p>As part of our outreach efforts, our church has partnered with organizations like <strong>Acts 29</strong> to support missions in remote regions such as <strong>Los Chilitos, Guatemala</strong>. In this small village, the gospel has been spread through hands-on evangelism, and we’ve had the privilege of helping baptize new believers and witness families and communities being transformed.</p>
+            <p><a href="https://www.acts29.com/rural-guatemala-los-chilitos" target="_blank">Read more about the Acts 29 initiative in Los Chilitos</a></p>
+        </div>
+
+        <div class="mission-story">
+            <h2>The Gospel Coalition: A Story of Restoration</h2>
+            <p>We’re also proud to highlight the efforts of Mitch & Amanda Muñoz, whose missionary journey in Los Chilitos is featured by The Gospel Coalition. Their work has resulted in significant spiritual and social growth in this area.</p>
+            <p><a href="https://www.thegospelcoalition.org" target="_blank">Find the full story on The Gospel Coalition</a></p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Church Mission. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
