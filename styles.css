@@ -47,7 +47,7 @@ nav ul li a.active {
     justify-content: flex-end; /* Aligns the content to the right */
     align-items: center; /* Vertically centers the content */
     height: 100vh; /* Ensures full viewport height */
-    background-image: url('new-folder/DSC09859.HEIC'); /* Replace with your image */
+    background-image: url('new-folder/church.jpeg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
 }
