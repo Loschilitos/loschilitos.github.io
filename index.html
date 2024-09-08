@@ -3,36 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Trip</title>
+    <title>Church & Mission Trips</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <header>
-        <h1>Mission Trip 2024</h1>
-        <p>2,343 feet</p>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="itinerary.html">Itinerary</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#ministries">Ministries</a></li>
+                    <li><a href="#mission-trips">Mission Trips</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    
-    <main>
-        <section class="hero">
-            <img src="hero-image.jpg" alt="Mission Trip">
-            <h2>Join Us on Our Mission Trip</h2>
-            <p>Helping communities and making a difference.</p>
-            <a href="support.html" class="cta-button">Support Us</a>
-        </section>
-    </main>
-    
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Serve with Us</h1>
+            <p>Join our mission trips to make a lasting impact in rural communities</p>
+            <a href="#mission-trips" class="btn-primary">Join a Mission Trip</a>
+        </div>
+    </section>
+
+    <!-- Mission Trips Section -->
+    <section id="mission-trips">
+        <div class="container">
+            <h2>Upcoming Mission Trips</h2>
+            <div class="trips">
+                <div class="trip">
+                    <img src="mission1.jpg" alt="Guatemala Mission">
+                    <h3>Guatemala Mission</h3>
+                    <p>Help us bring hope to the people of rural Guatemala.</p>
+                    <a href="#contact" class="btn-secondary">Get Involved</a>
+                </div>
+                <div class="trip">
+                    <img src="mission2.jpg" alt="Honduras Mission">
+                    <h3>Honduras Mission</h3>
+                    <p>Join our team in Honduras and support education initiatives.</p>
+                    <a href="#contact" class="btn-secondary">Get Involved</a>
+                </div>
+                <div class="trip">
+                    <img src="mission3.jpg" alt="Uganda Mission">
+                    <h3>Uganda Mission</h3>
+                    <p>Help build sustainable communities in Uganda.</p>
+                    <a href="#contact" class="btn-secondary">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved">
+        <div class="container">
+            <h2>How You Can Help</h2>
+            <p>Support our mission trips by donating or volunteering your time and skills. Together, we can make a difference.</p>
+            <a href="#donate" class="btn-primary">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Mission Trip. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Church & Mission Trips. All rights reserved.</p>
+        </div>
     </footer>
+
 </body>
 </html>
