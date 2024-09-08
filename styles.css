@@ -43,6 +43,26 @@ nav ul li {
     }
 }
 
+/* Mobile menu toggle button */
+.menu-toggle {
+    display: none; /* Hide by default */
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .mobile-nav {
+        display: none; /* Initially hidden */
+    }
+    .mobile-nav.show {
+        display: block; /* Display when toggled */
+    }
+}
 
 
 nav ul li a {
