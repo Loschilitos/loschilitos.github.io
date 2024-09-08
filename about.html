@@ -1,28 +1,107 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Trip</title>
+    <title>About Us | Los Chilitos Church</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS specific to the About Us page */
+        #about-us {
+            padding: 60px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #about-us h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        #about-us .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        #about-us .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        #about-us .team .member {
+            width: 30%;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #about-us .team .member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        #about-us .team .member h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        #about-us .team .member p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            #about-us .team .member {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Mission Trip 2024</h1>
-        <p>2,343 feet</p>
         <nav>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="itinerary.html">Itinerary</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="mission.html">Mission Trips</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     
     <main>
+        <section id="about-us">
+            <div class="content">
+                <h2>About Us</h2>
+                <p>Welcome to Los Chilitos Church! We are a community dedicated to spreading love, hope, and faith. Our mission is to make a positive impact in our community and beyond. Our church is a place where people come together to worship, learn, and grow in their faith.</p>
+                <p>Our team is passionate about serving others and creating a welcoming environment for everyone. Below, you'll find information about our dedicated team members.</p>
+                
+                <div class="team">
+                    <div class="member">
+                        <img src="images/pastor.jpg" alt="Pastor John Doe">
+                        <h3>Pastor John Doe</h3>
+                        <p>Pastor John has been leading our church with dedication and love for over a decade. His inspiring sermons and warm personality make him a cornerstone of our community.</p>
+                    </div>
+                    <div class="member">
+                        <img src="images/assistant.jpg" alt="Assistant Sarah Smith">
+                        <h3>Sarah Smith</h3>
+                        <p>Sarah is our assistant and a vital part of our church operations. Her organizational skills and friendly demeanor help keep everything running smoothly.</p>
+                    </div>
+                    <div class="member">
+                        <img src="images/music-director.jpg" alt="Music Director Mike Johnson">
+                        <h3>Mike Johnson</h3>
+                        <p>Mike leads our music ministry with passion and creativity. His musical talents and commitment to worship bring joy and inspiration to our services.</p>
+                    </div>
+                </div>
+                  <main>
         <section class="hero">
             <img src="hero-image.jpg" alt="Mission Trip">
             <h2>Acts 29 Mission Stories: Church Planting in Los Chilitos</h2>
@@ -38,8 +117,13 @@
         </section>
     </main>       
            
+            </div>
+        </section>
+    </main>
+    
     <footer>
-        <p>&copy; 2024 Mission Trip. All rights reserved.</p>
+        <p>&copy; 2024 Los Chilitos Church. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
