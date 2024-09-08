@@ -114,6 +114,7 @@ nav ul li a.active {
 .trips {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 .trip {
@@ -122,7 +123,15 @@ nav ul li a.active {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    margin-bottom: 20px; /* Add bottom margin for spacing */
 }
+
+@media (max-width: 768px) {
+    .trip {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
 
 .trip img {
     width: 100%;
