@@ -21,9 +21,12 @@ header {
     background-color: #f8f9fa;
     border-bottom: 1px solid #e1e1e1;
 }
+.container {
+    width: 100%; /* Use percentage rather than fixed width */
+}
 
 nav .container {
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
