@@ -41,21 +41,24 @@ nav ul li a.active {
 }
 
 /* Hero Section */
+
 #hero {
-    background-image: url('hero-image.jpg'); /* Replace with a relevant hero image */
+    display: flex;
+    justify-content: flex-end; /* Aligns the content to the right */
+    align-items: center; /* Vertically centers the content */
+    height: 100vh; /* Ensures full viewport height */
+    background-image: url('hero-image.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
 }
 
 #hero .hero-content {
-    float: right;
-    width: 40%; /* Adjust this percentage as needed */
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for readability */
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    color: #fff;
+    margin-right: 20px; /* Optional: Add some space from the right edge */
 }
 
 #hero h1 {
