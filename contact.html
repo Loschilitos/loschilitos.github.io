@@ -8,22 +8,9 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="/index.html" class="active">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="#ministries">Ministries</a></li>
-                    <li><a href="#mission-trips">Mission Trips</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#donate">Donate</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
-                </ul> 
-            </div>
-        </nav>
-    </header>
+     <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
 
     <main>
         <section id="contact">
@@ -47,5 +34,14 @@
     <footer>
         <p>&copy; 2024 Church Mission Trip. All rights reserved.</p>
     </footer>
+     <script>
+        // JavaScript to load the navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the navbar:', error));
+    </script>
 </body>
 </html>
