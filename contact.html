@@ -8,53 +8,49 @@
 </head>
 <body>
 
-    <!-- Navbar Placeholder -->
+     <!-- Navbar Placeholder -->
     <div id="navbar-placeholder"></div>
+
 
     <main>
         <section id="contact">
-            <div class="container">
-                <h1>Contact Us</h1>
-                <p>If you have any questions or need more information, please reach out to us using the form below:</p>
-                <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need more information, please reach out to us using the form below:</p>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
-    <!-- Footer Placeholder -->
+     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
 
     <!-- JavaScript to load the navbar and footer -->
     <script>
-        // Function to load external HTML content
-        function loadContent(url, placeholderId) {
-            fetch(url)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById(placeholderId).innerHTML = data;
-                })
-                .catch(error => console.error(`Error loading ${url}:`, error));
-        }
+        // Load the navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the navbar:', error));
 
-        // Load the navbar and footer
-        loadContent('navbar.html', 'navbar-placeholder');
-        loadContent('footer.html', 'footer-placeholder');
+        // Load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the footer:', error));
     </script>
 </body>
 </html>
