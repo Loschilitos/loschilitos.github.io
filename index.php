@@ -8,22 +8,7 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="/index.html" class="active">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="#ministries">Ministries</a></li>
-                    <li><a href="#mission-trips">Mission Trips</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#donate">Donate</a></li>
-                    <li><a href="/contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<?php include 'navbar.php'; ?>
 
     <!-- Example mobile menu toggle button 
 <button class="menu-toggle" aria-label="Toggle navigation">
