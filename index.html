@@ -8,12 +8,8 @@
 </head>
 <body>
 
-
-    <!-- Example mobile menu toggle button 
-<button class="menu-toggle" aria-label="Toggle navigation">
-    ☰
-</button> -->
-
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
 
     <!-- Hero Section -->
     <section id="hero">
@@ -37,7 +33,7 @@
                 </div>
                 <div class="trip">
                     <img src="mission2.jpg" alt="Guatemala Mission">
-                    <h3>Guatemala Mission June </h3>
+                    <h3>Guatemala Mission June</h3>
                     <p>Join our team in Guatemala and support education initiatives.</p>
                     <a href="#contact" class="btn-secondary">Get Involved</a>
                 </div>
@@ -66,7 +62,9 @@
             <p>&copy; 2024 Church & Mission Trips. All rights reserved.</p>
         </div>
     </footer>
-<script>
+
+    <!-- JavaScript to load the navbar -->
+    <script>
         // JavaScript to load the navbar
         fetch('navbar.html')
             .then(response => response.text())
