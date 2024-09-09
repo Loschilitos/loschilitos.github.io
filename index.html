@@ -56,22 +56,27 @@
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Church & Mission Trips. All rights reserved.</p>
-        </div>
-    </footer>
 
-    <!-- JavaScript to load the navbar -->
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to load the navbar and footer -->
     <script>
-        // JavaScript to load the navbar
+        // Load the navbar
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
             })
             .catch(error => console.error('Error loading the navbar:', error));
+
+        // Load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the footer:', error));
     </script>
 </body>
 </html>
