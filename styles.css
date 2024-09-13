@@ -113,6 +113,7 @@ nav ul li a.active {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    margin:20px;
 }
 
 .btn-primary:hover {
