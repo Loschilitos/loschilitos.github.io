@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Trip to Los Chilitos, Guatemala</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <section id="mission-trip">
+            <h1>Mission Trip to Los Chilitos, Guatemala</h1>
+            <p>Join us on a life-changing mission trip to Los Chilitos, Guatemala. Help us make a positive impact in the local community by providing support, building infrastructure, and sharing hope.</p>
+
+            <!-- Mission Trip Details -->
+            <div class="trip-details">
+                <h2>Upcoming Mission Trip</h2>
+                <p><strong>Dates:</strong> March 10 - March 20, 2025</p>
+                <p><strong>Location:</strong> Los Chilitos, Guatemala</p>
+                <p>Our mission in Los Chilitos focuses on building homes, providing education, and supporting the local community with essential needs.</p>
+
+                <img src="path-to-image/guatemala.jpg" alt="Los Chilitos, Guatemala" style="width:100%; border-radius: 10px; margin-bottom: 20px;">
+
+                <h3>Sign Up for the Mission Trip</h3>
+                <p>Fill out the form below to join our upcoming mission trip to Los Chilitos, Guatemala. We can't wait to serve with you!</p>
+
+                <!-- Sign-Up Form -->
+                <form action="submit_signup.php" method="post" class="signup-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message">Why do you want to join this trip?</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to load the navbar and footer -->
+    <script>
+        // Load the navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the navbar:', error));
+
+        // Load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the footer:', error));
+    </script>
+
+</body>
+</html>
 
