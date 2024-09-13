@@ -3,73 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission Trip to Los Chilitos, Guatemala</title>
+    <title>Mission Trips to Guatemala</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hero Section */
+        #hero-guatemala {
+            background-image: url('your-image-url-here.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        #hero-guatemala h1 {
+            font-size: 3em;
+        }
+
+        #hero-guatemala p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        /* Mission Trip Info Section */
+        .mission-trip-info {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .mission-trip-info h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .trip-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .trip-details div {
+            width: 48%;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .trip-details div h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .trip-details div p {
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        .trip-details div ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .trip-details div ul li {
+            margin: 10px 0;
+        }
+
+        /* Sign-Up Section */
+        .sign-up-section {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .sign-up-section h2 {
+            font-size: 2.2em;
+        }
+
+        .sign-up-section form {
+            margin-top: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sign-up-section input,
+        .sign-up-section textarea,
+        .sign-up-section button {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+
+        .sign-up-section button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 50px 20px;
+            background-color: #f1f1f1;
+            text-align: center;
+        }
+
+        .faq-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .faq-section .faq {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .faq-section .faq h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .faq-section .faq p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navbar Placeholder -->
-    <div id="navbar-placeholder"></div>
+    <!-- Hero Section -->
+    <section id="hero-guatemala">
+        <div>
+            <h1>Join Our Mission Trip to Rural Guatemala</h1>
+            <p>Make a lasting impact on communities in need while experiencing the beauty of Guatemala.</p>
+        </div>
+    </section>
 
-    <main>
-        <section id="mission-trip">
-            <h1>Mission Trip to Los Chilitos, Guatemala</h1>
-            <p>Join us on a life-changing mission trip to Los Chilitos, Guatemala. Help us make a positive impact in the local community by providing support, building infrastructure, and sharing hope.</p>
-
-            <!-- Mission Trip Details -->
-            <div class="trip-details">
-                <h2>Upcoming Mission Trip</h2>
-                <p><strong>Dates:</strong> March 10 - March 20, 2025</p>
-                <p><strong>Location:</strong> Los Chilitos, Guatemala</p>
-                <p>Our mission in Los Chilitos focuses on building homes, providing education, and supporting the local community with essential needs.</p>
-
-                <img src="path-to-image/guatemala.jpg" alt="Los Chilitos, Guatemala" style="width:100%; border-radius: 10px; margin-bottom: 20px;">
-
-                <h3>Sign Up for the Mission Trip</h3>
-                <p>Fill out the form below to join our upcoming mission trip to Los Chilitos, Guatemala. We can't wait to serve with you!</p>
-
-                <!-- Sign-Up Form -->
-                <form action="submit_signup.php" method="post" class="signup-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-
-                    <label for="message">Why do you want to join this trip?</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-
-                    <button type="submit" class="btn-primary">Submit</button>
-                </form>
+    <!-- Mission Trip Info Section -->
+    <section class="mission-trip-info">
+        <h2>Why Join Our Mission Trip?</h2>
+        <div class="trip-details">
+            <div>
+                <h3>Location: Rural Guatemala</h3>
+                <p>Our mission trip focuses on serving remote communities in Guatemala. You'll work alongside locals in life-changing projects like clean water access, education, and evangelism.</p>
+                <ul>
+                    <li>Duration: 1-2 weeks</li>
+                    <li>Cost: $1,200 (includes airfare, accommodation, and meals)</li>
+                </ul>
             </div>
-        </section>
-    </main>
+            <div>
+                <h3>What You'll Do</h3>
+                <p>As part of the mission team, you'll engage in various outreach activities:</p>
+                <ul>
+                    <li>Building homes and schools</li>
+                    <li>Hosting community health clinics</li>
+                    <li>Sharing the Gospel with local families</li>
+                    <li>Organizing children's programs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer Placeholder -->
-    <div id="footer-placeholder"></div>
+    <!-- Sign-Up Section -->
+    <section class="sign-up-section">
+        <h2>Ready to Join the Trip?</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Why do you want to join?" required></textarea>
+            <button type="submit">Sign Up Now</button>
+        </form>
+    </section>
 
-    <!-- JavaScript to load the navbar and footer -->
-    <script>
-        // Load the navbar
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading the navbar:', error));
-
-        // Load the footer
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading the footer:', error));
-    </script>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h4>What do I need to bring?</h4>
+            <p>You will need a valid passport, clothes suitable for construction and community work, and personal hygiene items. We'll send you a detailed packing list closer to the trip.</p>
+            
+            <h4>Is prior mission experience necessary?</h4>
+            <p>No prior mission experience is required. We welcome anyone with a heart to serve, whether it's your first trip or you're a seasoned mission traveler.</p>
+            
+            <h4>Are there fundraising options?</h4>
+            <p>Yes, we provide fundraising support and ideas to help you raise the necessary funds for the trip.</p>
+        </div>
+    </section>
 
 </body>
 </html>
-
