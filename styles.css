@@ -106,19 +106,6 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 
-.btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin:20px;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-}
 
 /* Mission Trips Section */
 #mission-trips {
@@ -208,11 +195,29 @@ footer {
 
 footer p {
     margin: 0;
+    margin-top: 20px; /* Adds space above the text */
+}
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
 }
 
-.footer .donate-button {
-    margin-bottom: 20px; /* Adds space below the donate button */
+footer .btn-primary {
+    margin-bottom: 20px; /* Adds space below the button */
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin:20px;
 }
+
+footer .btn-primary:hover {
+    background-color: #0056b3;
+}
+
 
 main {
     padding: 20px;
