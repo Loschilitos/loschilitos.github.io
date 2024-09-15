@@ -1,1 +1,274 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Trips to Guatemala</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset and Basic Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            box-sizing: border-box;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Navbar */
+        #navbar-placeholder {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        #navbar-placeholder a {
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        /* Hero Section */
+        #hero-guatemala {
+            background-image: url('new-folder/IMG_2862.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        #hero-guatemala::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        #hero-guatemala div {
+            position: relative;
+            z-index: 2;
+        }
+        #hero-guatemala h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        #hero-guatemala p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        /* Mission Trip Info Section */
+        .mission-trip-info {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        .mission-trip-info h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .trip-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .trip-details div {
+            flex: 1 1 calc(50% - 20px);
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .trip-details div h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .trip-details div p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .trip-details div ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .trip-details div ul li {
+            margin: 10px 0;
+        }
+        /* Sign-Up Section */
+        .sign-up-section {
+            background-color: #007bff;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .sign-up-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        .sign-up-section form {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .sign-up-section input,
+        .sign-up-section textarea,
+        .sign-up-section button {
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+        }
+        .sign-up-section input,
+        .sign-up-section textarea {
+            width: 100%;
+        }
+        .sign-up-section button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .sign-up-section button:hover {
+            background-color: #218838;
+        }
+        /* FAQ Section */
+        .faq-section {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        .faq-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        .faq-section .faq {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .faq-section .faq h4 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .faq-section .faq p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        /* Footer */
+        #footer-placeholder {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        #footer-placeholder p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section id="hero-guatemala">
+        <div>
+            <h1>Join Our Mission Trip to Rural Guatemala</h1>
+            <p>Make a lasting impact on communities in need while experiencing the beauty of Guatemala.</p>
+        </div>
+    </section>
+
+    <!-- Mission Trip Info Section -->
+    <section class="mission-trip-info">
+        <h2>Why Join Our Mission Trip?</h2>
+        <div class="trip-details">
+            <div>
+                <h3>Location: Rural Guatemala</h3>
+                <p>Our mission trip focuses on serving remote communities in Guatemala. You'll work alongside locals in life-changing projects like clean water access, education, and evangelism.</p>
+                <ul>
+                    <li>Duration: 1-2 weeks</li>
+                    <li>Cost: $1,200 (includes airfare, accommodation, and meals)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>What You'll Do</h3>
+                <p>As part of the mission team, you'll engage in various outreach activities:</p>
+                <ul>
+                    <li>Building homes and schools</li>
+                    <li>Hosting community health clinics</li>
+                    <li>Sharing the Gospel with local families</li>
+                    <li>Organizing children's programs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sign-Up Section -->
+    <section class="sign-up-section">
+        <h2>Ready to Join the Trip?</h2>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Why do you want to join?" required></textarea>
+            <button type="submit">Sign Up Now</button>
+        </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h4>What do I need to bring?</h4>
+            <p>You will need a valid passport, clothes suitable for construction and community work, and personal hygiene items. We'll send you a detailed packing list closer to the trip.</p>
+            
+            <h4>Is prior mission experience necessary?</h4>
+            <p>No prior mission experience is required. We welcome anyone with a heart to serve, whether it's your first trip or you're a seasoned mission traveler.</p>
+            
+            <h4>Are there fundraising options?</h4>
+            <p>Yes, we provide fundraising support and ideas to help you raise the necessary funds for the trip.</p>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JavaScript to load the navbar and footer -->
+    <script>
+        // Load the navbar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading the navbar:', error));
+
+        // Load the footer
+        fetch('footer
